@@ -43,8 +43,7 @@ export function MemeEditModal({ meme, onClose }: MemeEditModalProps) {
     <Modal isOpen onClose={onClose}>
       <ModalContent>
         <ModalHeader>Edit Meme</ModalHeader>
-        <ModalBody className="flex flex-col gap-4">
-          <Input label="ID" value={String(meme.id)} isReadOnly />
+        <ModalBody className="!overflow-y-auto !max-h-[450px] flex flex-col gap-4">
           <Input
             label="Name"
             value={name}
